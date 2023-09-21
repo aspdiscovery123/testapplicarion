@@ -14,10 +14,10 @@ app=Flask(__name__)
 def application():
     return "hello from ashish"
 
-@app.route('/setup',methods=['GET','POST'])
+@app.route('/testing',methods=['GET','POST'])
 
 def prediction():
-    data=request.get_json(force=True)
-    print(data)
+    json_body = request.get_json()
+    #print(data)
     return "done"
 
