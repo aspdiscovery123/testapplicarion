@@ -21,4 +21,3 @@ def prediction():
     print(data)
     return "done"
 
-app.run(host='0.0.0.0')
