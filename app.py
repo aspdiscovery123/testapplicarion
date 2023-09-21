@@ -14,7 +14,7 @@ app=Flask(__name__)
 def application():
     return "hello from ashish"
 
-@app.route('/setup',methods=['POST'])
+@app.route('/setup',methods=['GET','POST'])
 
 def prediction():
     data=request.get_json(force=True)
